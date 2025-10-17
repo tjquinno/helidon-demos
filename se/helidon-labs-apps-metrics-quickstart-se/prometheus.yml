@@ -1,0 +1,12 @@
+global:
+  scrape_interval: 5s
+
+scrape_configs:
+  - job_name: 'helidon-se'
+    metrics_path: '/observe/metrics'
+    static_configs:
+      - targets: ['localhost:8080']
+
+  - job_name: 'helidon-mp'
+    static_configs:
+      - targets: ['localhost:8080']

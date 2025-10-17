@@ -1,0 +1,43 @@
+helidon init
+Helidon versions
+  (1) 4.3.1
+  (2) 3.2.15
+  (3) 2.6.13
+  (4) Show all versions
+Enter selection (default: 1):
+
+Helidon version: 4.3.1
+
+| Helidon Flavor
+
+Select a Flavor
+  (1) se | Helidon SE
+  (2) mp | Helidon MP
+Enter selection (default: 1):
+
+| Application Type
+
+Select an Application Type
+  (1) quickstart | Quickstart
+  (2) database   | Database
+  (3) custom     | Custom
+Enter selection (default: 1):
+
+| Media Support
+
+Select a JSON library
+  (1) jsonp   | JSON-P
+  (2) jackson | Jackson
+  (3) jsonb   | JSON-B
+Enter selection (default: 1):
+
+| Customize Project
+
+Project groupId (default: me.tjquinn-helidon): io.helidon.labs.apps.metrics.quickstart.se
+Project artifactId (default: quickstart-se): helidon-labs-apps-metrics-quickstart-se
+Project version (default: 1.0-SNAPSHOT):
+Java package name (default: me.tjquinn.se.quickstart): io.helidon.labs.apps.metrics.quickstart.se
+
+Switch directory to /Users/tjquinn/mic/j4c/presentations/se/helidon-labs-apps-metrics-quickstart-se to use CLI
+
+Start development loop? (default: n):

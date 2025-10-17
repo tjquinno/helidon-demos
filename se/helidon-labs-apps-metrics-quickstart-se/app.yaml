@@ -1,0 +1,37 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: helidon-labs-apps-metrics-quickstart-se
+  labels:
+    app: helidon-labs-apps-metrics-quickstart-se
+spec:
+  type: ClusterIP
+  selector:
+    app: helidon-labs-apps-metrics-quickstart-se
+  ports:
+    - name: tcp
+      port: 8080
+      protocol: TCP
+      targetPort: 8080
+---
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: helidon-labs-apps-metrics-quickstart-se
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: helidon-labs-apps-metrics-quickstart-se
+  template:
+    metadata:
+      labels:
+        app: helidon-labs-apps-metrics-quickstart-se
+        version: v1
+    spec:
+      containers:
+      - name: helidon-labs-apps-metrics-quickstart-se
+        image: helidon-labs-apps-metrics-quickstart-se
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 8080
