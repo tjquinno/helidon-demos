@@ -96,7 +96,7 @@ Next, add a custom `Timer` to measure the time spent processing `GET` requests.
            curl http://localhost:8080/greet
            curl http://localhost:8080/metrics | grep mpGets
            ```
-        2. Note the several lines of output for the new `allGets` timer (naturally, your values might be different):
+        2. Note the several lines of output for the new `mpGets` timer (naturally, your values might be different):
             ```list
             # HELP mpGets_seconds  
             # TYPE mpGets_seconds summary
