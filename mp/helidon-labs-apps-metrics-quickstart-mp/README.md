@@ -59,13 +59,13 @@ Note that an optional step shows an incubating feature in Helidon 4.x which incl
 ## Add the registration and use of a custom timer
 Next, add a custom `Timer` to measure the time spent processing `GET` requests.
 
-1. Chdeck dependencies on the Helidon MP metrics and the MicroProfile metrics artifacts.
+1. Check dependencies on the Helidon MP metrics and the MicroProfile metrics artifacts.
 
    Make sure the following dependencies appear in the `pom.xml` file:
    ```xml
    <dependency>
-       <groupId>io.helidon.metrics</groupId>
-       <artifactId>helidon-metrics-api</artifactId>
+       <groupId>io.helidon.microprofile.metrics</groupId>
+       <artifactId>helidon-microprofile-metrics</artifactId>
    </dependency>
    <dependency>
        <groupId>org.eclipse.microprofile.metrics</groupId>

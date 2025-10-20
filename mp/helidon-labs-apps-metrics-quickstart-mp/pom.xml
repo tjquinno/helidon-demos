@@ -53,6 +53,16 @@
             <groupId>io.helidon.microprofile.metrics</groupId>
             <artifactId>helidon-microprofile-metrics</artifactId>
         </dependency>
+        <!--
+    Uncomment the following dependency to include the incubating virtual threads meters
+    available in Java 24 and later.
+-->
+<!--                <dependency>-->
+<!--                    <groupId>io.helidon.labs.incubator</groupId>-->
+<!--                    <artifactId>helidon-labs-incubator-virtual-threads-metrics</artifactId>-->
+<!--                    <version>1.0.0-SNAPSHOT</version>-->
+<!--                    <scope>runtime</scope>-->
+<!--                </dependency>-->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
